@@ -41,7 +41,8 @@ class _DemoPageState extends State<DemoPage> {
         child: Row(
           children: [
             TimeStamps(),
-            Agenda(timeIncrement: 2.0),
+            Agenda(timeIncrement: 2),
+            Text('h')
           ],
         ),
       ),

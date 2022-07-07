@@ -1,4 +1,4 @@
-import 'package:agenda/models/abstract_cursor_style.dart';
+import 'package:agenda/models/agenda_parameters/cursor/abstract_cursor_style.dart';
 import 'package:flutter/material.dart';
 
 class DefaultCursorStyle extends AbstractCursorStyle {

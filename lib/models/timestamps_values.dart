@@ -1,4 +1,4 @@
-import 'package:agenda/models/timestamps_format_enum.dart';
+import 'package:agenda/models/timestamps_format.dart';
 
 /// Get the different timestamps with certain criteria.
 /// It can return a list of timestamps with or without half-hour timestamps.

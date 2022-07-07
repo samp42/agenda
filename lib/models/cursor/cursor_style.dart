@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'package:agenda/models/abstract_cursor_style.dart';
-import 'package:agenda/models/default_cursor_style.dart';
+import 'package:agenda/models/agenda_parameters/cursor/abstract_cursor_style.dart';
+import 'package:agenda/models/agenda_parameters/cursor/default_cursor_style.dart';
 
 class CursorStyle extends AbstractCursorStyle {
 

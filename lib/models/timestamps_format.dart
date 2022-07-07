@@ -1,4 +1,4 @@
-enum TimestampsFormatEnum {
+enum TimestampsFormat {
   twelveHour,
   twentyFourHour
 }
