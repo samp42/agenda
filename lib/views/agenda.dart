@@ -13,7 +13,10 @@ class Agenda extends StatefulWidget {
       bool? displayCursorTime,
       TimestampsFormat? timestampsFormat})
       : super(key: key) {
+
+    // create agenda parameters, use default values if no values provided
     var defaultsAgendaParameters = DefaultAgendaParameters();
+
     _agendaParameters = AgendaParameters(
       dateTime: dateTime ?? defaultsAgendaParameters.dateTime,
       timeIncrement: timeIncrement ?? defaultsAgendaParameters.timeIncrement,
@@ -35,6 +38,5 @@ class _AgendaState extends State<Agenda> {
   Widget build(BuildContext context) {
     return Text(
         "${widget._agendaParameters.dateTime} + ${widget._agendaParameters.timeIncrement}");
-    throw UnimplementedError();
   }
 }
