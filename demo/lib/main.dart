@@ -1,4 +1,3 @@
-import 'package:agenda/views/timestamps.dart';
 import 'package:flutter/material.dart';
 import 'package:agenda/agenda.dart';
 
@@ -37,15 +36,7 @@ class _DemoPageState extends State<DemoPage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Row(
-          children: [
-            TimeStamps(),
-            Agenda(timeIncrement: 2),
-            Text('h')
-          ],
-        ),
-      ),
+      body:  Agenda(),
     );
   }
 }

@@ -1,5 +1,5 @@
-import 'package:agenda/models/agenda_parameters/cursor/abstract_cursor_style.dart';
 import 'package:flutter/material.dart';
+import 'abstract_cursor_style.dart';
 
 class DefaultCursorStyle extends AbstractCursorStyle {
   static DefaultCursorStyle? _instance;
@@ -13,7 +13,5 @@ class DefaultCursorStyle extends AbstractCursorStyle {
   DefaultCursorStyle._internal()
       : super(
           cursorColor: const Color(0xFFCD4C4C),
-        ) {
-    _instance = DefaultCursorStyle();
-  }
+        );
 }

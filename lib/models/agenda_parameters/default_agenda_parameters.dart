@@ -1,14 +1,21 @@
-import 'package:agenda/models/agenda_parameters/agenda_parameters.dart';
-import 'package:agenda/models/timestamps_format.dart';
+import 'package:agenda/models/agenda_parameters/abstract_agenda_parameters.dart';
+import 'package:agenda/models/timestamps/timestamps_format.dart';
 
-class DefaultAgendaParameters extends AgendaParameters {
+class DefaultAgendaParameters extends AbstractAgendaParameters {
+  static DefaultAgendaParameters? _instance;
 
-  // DateTime get dateTime => super.dateTime;
+  factory DefaultAgendaParameters() {
+    _instance ??= DefaultAgendaParameters._internal();
 
-  DefaultAgendaParameters() : super(
-    dateTime: DateTime.now(),
-    displayCursorTime: true,
-    timeIncrement: 5,
-    timestampsFormat: TimestampsFormat.twelveHour
+    return _instance!;
+  }
+
+  DefaultAgendaParameters._internal() : super(
+      dateTime: DateTime.now(),
+      displayCursor: true,
+      displayCursorTime: true,
+      timeIncrement: 5,
+      timestampsFormat: TimestampsFormat.twelveHour,
+      includeHourFromPreviousDay: false
   );
 }

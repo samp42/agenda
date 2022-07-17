@@ -1,12 +1,12 @@
 import 'dart:ui';
 
-import 'package:agenda/models/agenda_parameters/cursor/abstract_cursor_style.dart';
-import 'package:agenda/models/agenda_parameters/cursor/default_cursor_style.dart';
+import 'abstract_cursor_style.dart';
+import 'default_cursor_style.dart';
 
 class CursorStyle extends AbstractCursorStyle {
 
   factory CursorStyle({Color? cursorColor}) {
-    return CursorStyle._internal(cursorColor ??= const DefaultCursorStyle().cursorColor);
+    return CursorStyle._internal(cursorColor ??= DefaultCursorStyle().cursorColor);
   }
 
   CursorStyle._internal(Color cursorColor) : super(cursorColor: cursorColor);
